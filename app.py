@@ -7,10 +7,10 @@ import plotly.graph_objs as go
 
 ########### Define your variables ######
 
-myheading1='How to use callbacks'
+myheading1='Random xkcds'
 tabtitle = 'xkcd'
-list_of_options=['box plot', 'correlation', 'git commit', 'scatterplot']
-list_of_images=['outlier.png', 'correlation.png', 'gitcommit.jpg', 'scatterplot.png', 'good_code.png']
+list_of_options=['James Webb', 'She sells seashells on the sea shore', 'swinging cosmologist', 'hammer pattern']
+list_of_images=['sunshield.png', 'seashell_2x.png', 'cosmologist_on_a_tire_swing_2x.png', 'golden_hammer.png', 'programming.png']
 sourceurl = 'https://xkcd.com/'
 githublink = 'https://github.com/plotly-dash-apps/203-radio-callbacks'
 
@@ -50,7 +50,7 @@ app.layout = html.Div(children=[
 @app.callback(Output('your_output_here', 'children'),
               [Input('your_input_here', 'value')])
 def radio_results(image_you_chose):
-    return html.Img(src=app.get_asset_url(image_you_chose), style={'width': 'auto', 'height': '50%'}),
+    return html.Img(src=app.get_asset_url(image_you_chose), style={'width': 'auto', 'height': '75%'}),
 
 
 ############ Deploy
